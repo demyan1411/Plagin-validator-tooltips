@@ -1,0 +1,82 @@
+.form {
+  padding: 2.14286em;
+  padding-top: 1.07143em;
+  background: #f4f6f9;
+  width: 28.57143em;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .form__label {
+    display: block;
+    margin-bottom: 0.85714em;
+    position: relative; }
+    .form__label:before, .form__label:after {
+      content: " ";
+      display: table; }
+    .form__label:after {
+      clear: both; }
+  .form__title {
+    font-size: 1.78571em;
+    line-height: 1.42857em;
+    margin-bottom: 1.42857em; }
+  .form__desc {
+    float: left;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -5px; }
+    .form__desc:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+  .form__input, .form .placeholder, .form__textarea {
+    width: 9.28571em;
+    font-size: 0.85714em;
+    color: #000;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #dae1eb;
+    float: right; }
+    .form__input::-webkit-input-placeholder, .form .placeholder::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+      color: #dae1eb; }
+    .form__input:-moz-placeholder, .form .placeholder:-moz-placeholder, .form__textarea:-moz-placeholder {
+      color: #dae1eb; }
+    .form__input::-moz-placeholder, .form .placeholder::-moz-placeholder, .form__textarea::-moz-placeholder {
+      color: #dae1eb; }
+    .form__input:-ms-input-placeholder, .form .placeholder:-ms-input-placeholder, .form__textarea:-ms-input-placeholder {
+      color: #dae1eb; }
+  .form .placeholder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 0.42857em 0.5em; }
+  .form__buttons:before, .form__buttons:after {
+    content: " ";
+    display: table; }
+  .form__buttons:after {
+    clear: both; }
+  .form__button {
+    background: #00b9fe;
+    font-size: 1.07143em;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.57143em;
+    float: left;
+    cursor: pointer;
+    display: block;
+    transition: all linear 0.2s; }
+    .form__button:hover {
+      background: #1483ac; }
+    .form__button_reset {
+      float: right;
+      background: #dae1eb; }
+      .form__button_reset:hover {
+        background: #b4bcc8; }

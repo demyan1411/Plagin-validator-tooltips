@@ -1,0 +1,107 @@
+/* defaul style */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+address {
+  font-style: normal; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+input, textarea {
+  outline: none;
+  border: none; }
+
+html, body {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5c7b98;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  height: 100%; }
+
+body {
+  position: relative; }
+
+body {
+  background: #2980b9;
+  font-size: 16px; }
+  @media (max-width: 992px) {
+    body {
+      font-size: 14px; } }
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px; } }
+  @media (max-width: 480px) {
+    body {
+      font-size: 10px; } }
+
+.wrapper {
+  width: 985px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 240px; }
+
+.wrapper:before, .wrapper:after, .cl:before, .cl:after {
+  content: " ";
+  display: table; }
+
+.wrapper:after, .cl:after {
+  clear: both; }
+
+.main {
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  background: blue; }
+
+.error {
+  border: 1px solid firebrick !important; }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+  .popup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff; }
+    .popup__content-inner_error {
+      color: firebrick; }
+  .popup__close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: green;
+    top: 5px;
+    right: 5px;
+    cursor: pointer; }
+
+/* defaul style end */

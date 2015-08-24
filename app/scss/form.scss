@@ -1,0 +1,89 @@
+@import "mixins";
+
+.form {
+	padding: em(30px);
+	padding-top: em(15px);
+	background: #f4f6f9;
+	width: em(400px);
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	&__label {
+		display: block;
+		
+		margin-bottom: em(12px);
+		position: relative;
+		@include cl;
+
+	}
+
+	&__title {
+
+		font-size: em(25px);
+		line-height: em(20px);
+		margin-bottom: em(20px);
+	}
+
+	&__desc {
+		float: left;
+		font-size: em(14px);
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: -5px;
+
+		@include center;
+	}
+
+	&__input, .placeholder, &__textarea {
+		width: em(130px);
+		font-size: em(12px);
+		color: #000;
+		padding: em(7px);
+		box-sizing: border-box;
+		border: 1px solid #dae1eb;
+		float: right;
+
+		@include placecolor(#dae1eb);
+
+	}
+
+.placeholder {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		padding: em(6px) em(7px);
+	}
+
+	
+	&__buttons {
+		@include cl;
+	}
+	&__button {
+		background: #00b9fe;
+		font-size: em(15px);
+		color: #fff;
+		border: none;
+		outline: none;
+		padding: em(8px);
+		float: left;
+		cursor: pointer;
+		display: block;
+		transition: all linear .2s;
+
+		&:hover {
+			background: #1483ac;
+		}
+		&_reset {
+			float: right;
+			background: #dae1eb;
+			&:hover {
+				background: #b4bcc8;
+			}
+		}
+	}
+}

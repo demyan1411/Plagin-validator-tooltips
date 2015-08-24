@@ -1,0 +1,14 @@
+form#form.form(action="mail.php")
+	h2.form__title Заказать звонок
+	label.form__label
+		span.form__desc Ваше имя
+		input(type="text", name="name", placeholder="Константин", data-validation="text").form__input
+	label.form__label
+		span.form__desc Телефон
+		input(type="text", name="phone", placeholder="+7 (912) 000-00-00", data-validation="phone").form__input
+	label.form__label
+		span.form__desc Почта
+		input(type="text", name="mail", placeholder="ivanov@mail.ru", data-validation="mail").form__input
+	.form__buttons
+		button(type="submit").form__button Отправить
+		button(type="reset").form__button.form__button_reset Очистить

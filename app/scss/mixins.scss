@@ -1,0 +1,75 @@
+$wrapperWidth : 985px;
+$footerHeight : 240px;
+
+$bodyFontSize : 14px;
+$bodyColor : #5c7b98;
+$bodyLineHeight : 20px;
+
+
+
+@mixin laptop {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@function em($target, $context: $bodyFontSize) {
+    @if $target == 0 {@return 0}
+    @return $target / $context + 0em;
+}
+
+@mixin inlineBlock {
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin cl {
+	&:before, &:after {content: " "; display: table;}
+	&:after {clear: both;}
+}
+
+@mixin center {
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+
+@mixin placecolor($color: #000000) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

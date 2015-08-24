@@ -1,0 +1,5 @@
+.scroller__bar-wrapper {
+  display: none; }
+
+.button_up:after, .button_up:before {
+  display: none; }
